@@ -1,0 +1,56 @@
+Create new project called `the-big-library` -done
+Create a node project. -done
+Add express + nodemon depencency (to the right place) -done
+Create books.json file with an array of books -done
+example: [
+    {
+        id: 1,
+        name: "the ring",
+        publish_date: "2011-12-10"
+
+    },
+    {
+        id: 2,
+        name: "the ring tin tin",
+        publish_date: "2004-8-10"
+    },
+    {
+        id:3,
+        name: "im don't like books",
+        publish_date: "2020-1-10"
+    },
+    {
+        id: 3,
+        name: "the ring",
+        publish_date: "2021-10-10"
+    }
+]
+
+Create an index.js file.-done
+
+Create a express app inside it.-done
+
+Please create a route '/' on this route return an html string <h1>Wellcone to the library</h1>-done
+
+Create a route called /books and return the content of the books file.-done
+
+If in the /books file there is a url param id - return the spefice book with this id (http://localhost/books?id=1 returns the book with the id 1).-done
+
+If in the /books file there is a url param name - return the spefice book with this name (http://localhost/books?name=the ring returns the book with the name the ring).  done?
+
+Add a post route /books that takes all the books param (name date and publish_date and add another book to the json *file*)-done
+
+Please validate that all inputs are in the request, if an input not there - please send an error to the user.-done
+
+create an id for the book (take the last id and increament by one)-done
+
+bonus:
+Create a db called `the-big-library`-done
+Add some books to it.-done
+All the logic above insted of getting it from the file get it from the DB.
+same for the post.
+
+Good luck.
+
+
+
