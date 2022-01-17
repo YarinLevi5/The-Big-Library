@@ -1,5 +1,6 @@
 const {
-    urlencoded
+    urlencoded,
+    query
 } = require('express');
 var express = require('express');
 var app = express();
@@ -37,7 +38,7 @@ app.post('/books', function (req, res) {
         publish_date: req.body.publish_date
     }
     if (validator.isEmpty(obj.name, obj.publish_date)) {
-        throw 'check your fileds!'
+        res.send('check your fileds!')
     } else {
         res.send('User create')
 
